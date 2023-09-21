@@ -31,12 +31,10 @@
                         <td>{{ "Rp".number_format($buku->harga, 2, ',', '.') }}</td>
                     </tr>
                 @endforeach
-                <tr>
-                    <td>Jumlah data: {{ $jumlah_data }} buku</td>
-                    <td>Total harga: {{ "Rp".number_format($total_harga, 2, ',', '.') }}</td>
-                </tr>
             </tbody>
         </table>
+        <p>{{ "Jumlah data: ".$jumlah_data }} buku</p>
+        <p>{{ "Total harga: Rp".number_format($total_harga, 2, ',', '.') }}</p>
     </div>
 </body>
 </html>
